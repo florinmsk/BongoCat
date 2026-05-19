@@ -153,7 +153,7 @@ async function handleOk() {
       gap="small"
       vertical
     >
-      <Flex align="center">
+      <Flex align="center" gap="small">
         <span>{{ $t('components.updateApp.labels.updateVersion') }}</span>
         <span>
           <span>{{ state.update?.currentVersion }} 👉 </span>
@@ -165,18 +165,25 @@ async function handleOk() {
         </span>
       </Flex>
 
-      <Flex align="center">
+      <Flex align="center" gap="small">
         <span>{{ $t('components.updateApp.labels.updateTime') }}</span>
         <span>{{ state.update?.date }}</span>
       </Flex>
 
-      <Flex vertical>
+      <Flex vertical gap="small">
         <span>{{ $t('components.updateApp.labels.changelog') }}</span>
 
         <VueMarkdown
+          v-if="state.update?.body"
           class="update-note max-h-40 overflow-auto"
-          :source="state.update?.body ?? ''"
+          :source="state.update.body"
         />
+        <span
+          v-else
+          class="color-text-tertiary italic"
+        >
+          {{ $t('components.updateApp.hints.noChangelog') }}
+        </span>
       </Flex>
     </Flex>
   </Modal>
