@@ -1,0 +1,16 @@
+{
+  "identifier": "com.florinmsk.BongoCat",
+  "bundle": {
+    "windows": {
+      "digestAlgorithm": "sha256",
+      "nsis": {
+        "languages": [
+          "Romanian",
+          "English"
+        ],
+        "installMode": "both",
+        "displayLanguageSelector": true
+      }
+    }
+  }
+}

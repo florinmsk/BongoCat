@@ -1,0 +1,205 @@
+{
+  "pages": {
+    "main": {
+      "hints": {
+        "redrawing": "Se redesenează...",
+        "switching": "Se schimbă..."
+      }
+    },
+    "preference": {
+      "title": "Preferințe",
+      "cat": {
+        "title": "Pisică",
+        "labels": {
+          "modelSettings": "Setări model",
+          "mirrorMode": "Mod oglindă",
+          "mouseMirror": "Oglindă mouse",
+          "ignoreMouse": "Ignoră evenimentele mouse-ului",
+          "windowSettings": "Setări fereastră",
+          "passThrough": "Click prin fereastră",
+          "alwaysOnTop": "Mereu deasupra",
+          "keepInScreen": "Păstrează pe ecran",
+          "windowSize": "Dimensiune fereastră",
+          "windowRadius": "Rotunjire colțuri",
+          "opacity": "Opacitate",
+          "motionSound": "Sunet la mișcare",
+          "behavior": "Mișcări și expresii",
+          "autoReleaseDelay": "Întârziere eliberare automată",
+          "hideOnHover": "Ascunde la hover",
+          "maxFPS": "Frame rate maxim"
+        },
+        "hints": {
+          "mirrorMode": "Când e activat, modelul va fi oglindit orizontal.",
+          "mouseMirror": "Când e activat, mișcarea mâinii va fi oglindită după mouse.",
+          "ignoreMouse": "Când e activat, modelul nu va răspunde la evenimentele mouse-ului. Util pentru modul tastatură sau gamepad.",
+          "motionSound": "Când e activat, modelul va reda efectele sonore aferente acțiunilor (dacă există).",
+          "behavior": "Când e activat, mișcările și expresiile pot fi configurate și declanșate.",
+          "passThrough": "Când e activat, click-urile trec prin fereastră fără să o afecteze.",
+          "alwaysOnTop": "Când e activat, fereastra rămâne deasupra tuturor celorlalte ferestre.",
+          "keepInScreen": "Când e activat, fereastra rămâne automat în limitele ecranului.",
+          "windowSize": "Mută mouse-ul la marginea ferestrei sau ține Shift și trage cu click dreapta pentru a redimensiona.",
+          "autoReleaseDelay": "Pe Windows, unele taste de sistem nu pot fi detectate la eliberare și se vor elibera automat după un timp.",
+          "hideOnHover": "Când e activat, fereastra se ascunde automat la trecerea mouse-ului. Poți seta o întârziere; 0 înseamnă ascundere imediată.",
+          "maxFPS": "Limitează frame rate-ul maxim al modelului. Reducerea acestuia scade consumul de CPU/GPU."
+        }
+      },
+      "general": {
+        "title": "General",
+        "labels": {
+          "appSettings": "Setări aplicație",
+          "launchOnStartup": "Pornire automată la deschiderea calculatorului",
+          "showTaskbarIcon": "Afișează pictograma în taskbar",
+          "showTrayIcon": "Afișează pictograma în system tray",
+          "appearanceSettings": "Setări aspect",
+          "themeMode": "Temă",
+          "language": "Limbă",
+          "updateSettings": "Setări actualizare",
+          "autoCheckUpdate": "Verifică automat actualizările",
+          "permissionsSettings": "Setări permisiuni",
+          "inputMonitoringPermission": "Permisiune monitorizare input",
+          "administratorPermission": "Administrator"
+        },
+        "options": {
+          "auto": "Sistem",
+          "lightMode": "Luminoasă",
+          "darkMode": "Întunecată"
+        },
+        "hints": {
+          "showTaskbarIcon": "Când e activat, fereastra poate fi capturată cu OBS Studio.",
+          "showTrayIcon": "Când e activat, pictograma aplicației apare în system tray.",
+          "inputMonitoringPermission": "Activează monitorizarea inputului pentru a primi evenimente de la tastatură și mouse.",
+          "inputMonitoringPermissionGuide": "Permisiunea de monitorizare a inputului este necesară pentru ca aplicația să primească evenimente de la tastatură și mouse.\n\nPași:\n1. Deschide Setări sistem → Confidențialitate și securitate → Monitorizare input.\n2. Dacă BongoCat apare deja în listă, selectează-l și apasă „-” pentru a-l elimina.\n3. Apasă „+” pentru a găsi și adăuga BongoCat.\n4. Repornește aplicația pentru ca permisiunea să fie aplicată.",
+          "administratorPermission": "Rularea ca administrator ajută la capturarea mai stabilă a unor taste și evenimente la nivel de sistem.",
+          "administratorPermissionGuide": "Pentru capturarea mai stabilă a unor taste de sistem, se recomandă rularea ca administrator.\n\nCum:\n1. Închide aplicația.\n2. Localizează executabilul sau scurtătura.\n3. Alege o variantă:\n   • Doar de această dată: Click dreapta → „Rulează ca administrator”.\n   • Permanent: Click dreapta → Proprietăți → Compatibilitate → bifează „Rulează acest program ca administrator” → OK."
+        },
+        "status": {
+          "authorized": "Autorizat",
+          "adminEnabled": "Activat",
+          "authorize": "Activează",
+          "viewGuide": "Vezi instrucțiuni"
+        },
+        "buttons": {
+          "openNow": "Deschide acum",
+          "openLater": "Deschide mai târziu",
+          "setLater": "Setează mai târziu",
+          "exitApp": "Închide aplicația"
+        }
+      },
+      "model": {
+        "title": "Model",
+        "labels": {
+          "deleteModel": "Șterge model"
+        },
+        "hints": {
+          "deleteSuccess": "Șters cu succes",
+          "deleteModel": "Sigur dorești să ștergi acest model?",
+          "importSuccess": "Importat cu succes",
+          "clickOrDragToImport": "Apasă sau trage aici pentru a importa"
+        },
+        "tooltips": {
+          "createModel": "Creează model",
+          "convertModel": "Convertește model",
+          "moreModels": "Mai multe modele"
+        },
+        "behaviorModal": {
+          "title": "Mișcări și expresii",
+          "labels": {
+            "motion": "Mișcare",
+            "expression": "Expresie",
+            "motionIndex": "Mișcarea {index}",
+            "motionGroupIndex": "Grup de mișcări {index}",
+            "expressionIndex": "Expresia {index}"
+          }
+        }
+      },
+      "shortcut": {
+        "title": "Scurtături",
+        "labels": {
+          "toggleCat": "Comută pisica",
+          "togglePreferences": "Comută preferințele",
+          "mirrorMode": "Mod oglindă",
+          "passThrough": "Click prin fereastră",
+          "alwaysOnTop": "Mereu deasupra"
+        },
+        "hints": {
+          "toggleCat": "Arată sau ascunde fereastra pisicii.",
+          "togglePreferences": "Arată sau ascunde fereastra de preferințe.",
+          "mirrorMode": "Comută modul oglindă al pisicii.",
+          "passThrough": "Comută modul „click prin fereastră”.",
+          "alwaysOnTop": "Comută dacă fereastra pisicii rămâne deasupra."
+        }
+      },
+      "about": {
+        "title": "Despre",
+        "labels": {
+          "aboutApp": "Despre aplicație",
+          "appLog": "Jurnale aplicație"
+        },
+        "info": {
+          "version": "Versiunea",
+          "activeModel": "Model activ",
+          "installedModels": "Modele instalate",
+          "developer": "Dezvoltator"
+        },
+        "models": {
+          "standard": "Standard",
+          "keyboard": "Tastatură",
+          "gamepad": "Gamepad"
+        },
+        "buttons": {
+          "checkUpdate": "Verifică actualizări",
+          "viewLog": "Vezi jurnalele"
+        }
+      }
+    }
+  },
+  "components": {
+    "shortcut": {
+      "hints": {
+        "pressRecordShortcut": "Apasă pentru a înregistra scurtătura",
+        "clickRecordShortcut": "Click pentru a înregistra scurtătura"
+      }
+    },
+    "updateApp": {
+      "title": "Versiune nouă disponibilă 🥳",
+      "labels": {
+        "updateVersion": "Versiune: ",
+        "updateTime": "Data lansării: ",
+        "changelog": "Note de versiune: "
+      },
+      "hints": {
+        "checkingUpdates": "Se verifică actualizările...",
+        "alreadyLatest": "Folosești deja cea mai recentă versiune 🎉"
+      },
+      "buttons": {
+        "updateNow": "Actualizează acum",
+        "updateLater": "Actualizează mai târziu"
+      }
+    }
+  },
+  "composables": {
+    "useAppMenu": {
+      "labels": {
+        "preference": "Preferințe...",
+        "hideCat": "Ascunde pisica",
+        "showCat": "Arată pisica",
+        "passThrough": "Click prin fereastră",
+        "windowSize": "Dimensiune fereastră",
+        "opacity": "Opacitate",
+        "restartApp": "Repornește aplicația",
+        "quitApp": "Închide aplicația"
+      }
+    },
+    "useTray": {
+      "checkUpdate": "Verifică actualizări",
+      "openSource": "Cod sursă"
+    }
+  },
+  "utils": {
+    "live2d": {
+      "hints": {
+        "notFound": "Fișierul principal de configurare al modelului nu a fost găsit. Asigură-te că fișierele modelului sunt complete."
+      }
+    }
+  }
+}
