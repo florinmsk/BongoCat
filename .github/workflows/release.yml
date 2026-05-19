@@ -83,7 +83,7 @@ jobs:
       - name: Rust cache
         uses: swatinem/rust-cache@v2
         with:
-          workspaces: target
+          workspaces: .
 
       - name: Sync node version and setup cache
         uses: actions/setup-node@v4
