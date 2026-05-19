@@ -28,7 +28,7 @@ const catStore = useCatStore()
 const generalStore = useGeneralStore()
 const shortcutStore = useShortcutStore()
 const appWindow = getCurrentWebviewWindow()
-const { isRestored, restoreState } = useWindowState()
+const { isRestored } = useWindowState()
 const { darkAlgorithm, defaultAlgorithm } = theme
 const { locale } = useI18n()
 
@@ -42,7 +42,6 @@ onMounted(async () => {
   await generalStore.$tauri.start()
   await generalStore.init()
   await shortcutStore.$tauri.start()
-  await restoreState()
 })
 
 watch(() => generalStore.appearance.language, (value) => {
@@ -96,7 +95,7 @@ useEventListener('click', (event) => {
       }"
       :wave="wave"
     >
-      <RouterView v-if="isRestored" />
+      <RouterView />
     </ConfigProvider>
   </HappyProvider>
 </template>
