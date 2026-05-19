@@ -133,7 +133,8 @@
         "title": "Despre",
         "labels": {
           "aboutApp": "Despre aplicație",
-          "appLog": "Jurnale aplicație"
+          "appLog": "Jurnale aplicație",
+          "changelog": "Note de versiune"
         },
         "info": {
           "version": "Versiunea",
@@ -148,7 +149,12 @@
         },
         "buttons": {
           "checkUpdate": "Verifică actualizări",
-          "viewLog": "Vezi jurnalele"
+          "viewLog": "Vezi jurnalele",
+          "viewChangelog": "Vezi versiunile"
+        },
+        "hints": {
+          "noReleases": "Nicio versiune publicată.",
+          "changelogLoadError": "Nu am putut încărca versiunile:"
         }
       }
     }
@@ -163,13 +169,14 @@
     "updateApp": {
       "title": "Versiune nouă disponibilă 🥳",
       "labels": {
-        "updateVersion": "Versiune: ",
-        "updateTime": "Data lansării: ",
-        "changelog": "Note de versiune: "
+        "updateVersion": "Versiune:",
+        "updateTime": "Data lansării:",
+        "changelog": "Note de versiune:"
       },
       "hints": {
         "checkingUpdates": "Se verifică actualizările...",
-        "alreadyLatest": "Folosești deja cea mai recentă versiune 🎉"
+        "alreadyLatest": "Folosești deja cea mai recentă versiune 🎉",
+        "noChangelog": "Fără note pentru această versiune."
       },
       "buttons": {
         "updateNow": "Actualizează acum",

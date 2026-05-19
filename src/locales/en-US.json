@@ -133,7 +133,8 @@
         "title": "About",
         "labels": {
           "aboutApp": "About App",
-          "appLog": "App Logs"
+          "appLog": "App Logs",
+          "changelog": "Changelog"
         },
         "info": {
           "version": "Version",
@@ -148,7 +149,12 @@
         },
         "buttons": {
           "checkUpdate": "Check for Updates",
-          "viewLog": "View Logs"
+          "viewLog": "View Logs",
+          "viewChangelog": "View Releases"
+        },
+        "hints": {
+          "noReleases": "No releases published.",
+          "changelogLoadError": "Failed to load releases:"
         }
       }
     }
@@ -163,13 +169,14 @@
     "updateApp": {
       "title": "New Version Found 🥳",
       "labels": {
-        "updateVersion": "Update Version: ",
-        "updateTime": "Update Time: ",
-        "changelog": "Changelog: "
+        "updateVersion": "Update Version:",
+        "updateTime": "Update Time:",
+        "changelog": "Changelog:"
       },
       "hints": {
         "checkingUpdates": "Checking for updates...",
-        "alreadyLatest": "Already on the latest version 🎉"
+        "alreadyLatest": "Already on the latest version 🎉",
+        "noChangelog": "No notes for this version."
       },
       "buttons": {
         "updateNow": "Update Now",
