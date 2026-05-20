@@ -28,7 +28,7 @@ export const modifierKeys: Key[] = [
 })
 
 export const standardKeys: Key[] = [
-  // 第一排
+  // primul rând
   {
     eventKey: 'Escape',
     symbol: isMac ? '⎋' : 'Esc',
@@ -68,7 +68,7 @@ export const standardKeys: Key[] = [
   },
   {
     eventKey: 'F12',
-  }, // 第二排
+  }, // al doilea rând
   {
     eventKey: 'Backquote',
     symbol: '`',
@@ -117,7 +117,7 @@ export const standardKeys: Key[] = [
     eventKey: 'Backspace',
     symbol: isMac ? '⌫' : void 0,
   },
-  // 第三排
+  // al treilea rând
   {
     eventKey: 'Tab',
     symbol: isMac ? '⇥' : void 0,
@@ -164,7 +164,7 @@ export const standardKeys: Key[] = [
     eventKey: 'Backslash',
     symbol: '\\',
   },
-  // 第四排
+  // al patrulea rând
   {
     eventKey: 'KeyA',
   },
@@ -204,7 +204,7 @@ export const standardKeys: Key[] = [
     eventKey: 'Enter',
     symbol: isMac ? '↩︎' : void 0,
   },
-  // 第五排
+  // al cincilea rând
   {
     eventKey: 'KeyZ',
   },
@@ -238,12 +238,12 @@ export const standardKeys: Key[] = [
     eventKey: 'Slash',
     symbol: '/',
   },
-  // 第六排
+  // al șaselea rând
   {
     eventKey: 'Space',
     symbol: isMac ? '␣' : void 0,
   },
-  // 方向键
+  // tastele direcționale
   {
     eventKey: 'ArrowUp',
     symbol: '↑',

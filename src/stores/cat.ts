@@ -25,27 +25,27 @@ export interface CatStore {
 }
 
 export const useCatStore = defineStore('cat', () => {
-  /* ------------ 废弃字段（后续删除） ------------ */
+  /* ------------ Câmpuri deprecate (de eliminat) ------------ */
 
-  /** @deprecated 请使用 `model.mirror` */
+  /** @deprecated folosește `model.mirror` */
   const mirrorMode = ref(false)
 
-  /** @deprecated 请使用 `model.mouseMirror` */
+  /** @deprecated folosește `model.mouseMirror` */
   const mouseMirror = ref(false)
 
-  /** @deprecated 请使用 `window.passThrough` */
+  /** @deprecated folosește `window.passThrough` */
   const penetrable = ref(false)
 
-  /** @deprecated 请使用 `window.alwaysOnTop` */
+  /** @deprecated folosește `window.alwaysOnTop` */
   const alwaysOnTop = ref(true)
 
-  /** @deprecated 请使用 `window.scale` */
+  /** @deprecated folosește `window.scale` */
   const scale = ref(100)
 
-  /** @deprecated 请使用 `window.opacity` */
+  /** @deprecated folosește `window.opacity` */
   const opacity = ref(100)
 
-  /** @deprecated 用于标识数据是否已迁移，后续版本将删除 */
+  /** @deprecated marchează dacă datele au fost migrate; va fi eliminat în versiunile viitoare */
   const migrated = ref(false)
 
   const model = reactive<CatStore['model']>({

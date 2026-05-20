@@ -24,24 +24,24 @@ export interface GeneralStore {
 }
 
 export const useGeneralStore = defineStore('general', () => {
-  /* ------------ 废弃字段（后续删除） ------------ */
+  /* ------------ Câmpuri deprecate (de eliminat) ------------ */
 
-  /** @deprecated 请使用 `update.autoCheck` */
+  /** @deprecated folosește `update.autoCheck` */
   const autoCheckUpdate = ref(false)
 
-  /** @deprecated 请使用 `app.autostart` */
+  /** @deprecated folosește `app.autostart` */
   const autostart = ref(false)
 
-  /** @deprecated 请使用 `app.taskbarVisible` */
+  /** @deprecated folosește `app.taskbarVisible` */
   const taskbarVisibility = ref(false)
 
-  /** @deprecated 请使用 `appearance.theme` */
+  /** @deprecated folosește `appearance.theme` */
   const theme = ref<'auto' | Theme>('auto')
 
-  /** @deprecated 请使用 `appearance.isDark` */
+  /** @deprecated folosește `appearance.isDark` */
   const isDark = ref(false)
 
-  /** @deprecated 用于标识数据是否已迁移，后续版本将删除 */
+  /** @deprecated marchează dacă datele au fost migrate; va fi eliminat în versiunile viitoare */
   const migrated = ref(false)
 
   const app = reactive<GeneralStore['app']>({
