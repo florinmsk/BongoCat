@@ -88,7 +88,12 @@ export function useWindowState() {
       }
     }
 
-    if (width && height) {
+    const MIN_MAIN_WIDTH = 400
+    const MIN_MAIN_HEIGHT = 250
+    const isMainTooSmall = label === WINDOW_LABEL.MAIN
+      && ((width ?? 0) < MIN_MAIN_WIDTH || (height ?? 0) < MIN_MAIN_HEIGHT)
+
+    if (width && height && !isMainTooSmall) {
       await appWindow.setSize(new PhysicalSize(width, height))
     }
 
